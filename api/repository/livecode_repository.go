@@ -19,7 +19,7 @@ var ApiUrl = "https://randomuser.me/api/?results=1000&inc=gender,name,email,loca
 
 const (
 	baseTimeout = 3 * time.Second //Se puede modificar para cambiar el tiempo base de espera por peticion
-	workerNums  = 3               // Se pueden aumentar los workers pero hay que tener cuidado por el mismo tema de que la api que se consume tiene un rate limit y saca error 429 si son muchos requests o pidiendo muchos datos
+	workerNums  = 1               // Se pueden aumentar los workers pero hay que tener cuidado por el mismo tema de que la api que se consume tiene un rate limit y saca error 429 si son muchos requests o pidiendo muchos datos
 	maxRetries  = 5
 )
 
